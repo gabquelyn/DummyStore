@@ -1,0 +1,78 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-family: 'Mulish', 'san-serif';
+    max-height: 350px;
+}
+
+.top{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card img{
+   width: 95%;
+   height: 200px;
+   margin: 5px 0;
+   cursor: pointer;
+}
+.card p{
+    font-weight: 200;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 5px;
+    transition: color 0.4s ease;
+}
+.bottom{
+    width: 100%;
+    background-color: #26211c;
+}
+
+.icon button{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon button.active{
+    color: red;
+}
+
+.icon button.greencart{
+    color: #69976b;
+}
+
+#dark.bottom{
+    background-color: #2D2B28;
+}
+
+#dark.bottom p{
+    color: #ded7cc;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content{
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+    .card img{
+        height: 150px;
+    }
+}

@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+}
+.circle{
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.circle1{
+    background-color: #c9976b;
+    animation: 1s move infinite alternate;
+}
+
+.circle2{
+    background-color: #d6b68b;
+    animation: 1.1s move infinite alternate;
+}
+
+.circle3{
+    background-color: #ded7cc;
+    animation: 1.2s move infinite alternate;
+}
+
+@keyframes move{
+from{
+    transform: translateY(0)
+}
+to{
+    transform: translateY(-5px)
+}
+}
+
+@media screen and (max-width: 700px){
+    .container{
+        width: 100%;
+    }
+}

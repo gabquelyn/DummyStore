@@ -1,0 +1,123 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0, 0.75);
+    z-index: 10;
+}
+
+.modal {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #2e1c16;
+    position: absolute;
+    max-width: 60%;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-left: 15%;
+    transition: 0.4s all ease;
+    z-index: 10;
+    animation: slidedown 0.4s ease;
+}
+
+#dark.modal{
+    background-color: #ede7dc;
+}
+.price{
+    text-align: right;
+}
+.actions{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.cancel{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.actions button{
+   background-color: transparent;
+    color: #2e1c16;
+    outline: none;
+    border: 2px solid #2e1c16;;
+    padding: .6rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.actions button:hover{
+    background-color: #2e1c16;
+    color: white;
+}
+
+button.cartbutton{
+    background-color: #2e1c16;
+    color: white;
+    margin-left: 5px; 
+}
+
+.icon{
+    margin-right: 3px;
+}
+
+
+.modal img{
+    width: 30%;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .modal{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .actions button{
+         border: 1px solid #2e1c16;;
+         padding: .4rem 0.8rem;
+         border-radius: 15px;
+         font-size: 12px;
+     }
+     .modal img{
+        width: 100%;
+        margin: 0;
+    }
+    .modal p{
+        font-size: 13px;
+    }
+    .modal{
+        animation: slideleft 0.4s ease;
+    }
+}
+
+@keyframes slideleft {
+    from {
+        opacity: 0;
+        transform: translateX(-3rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes slidedown {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}

@@ -1,0 +1,179 @@
+.flex{
+    background-color: white;
+    display: flex;
+    padding: 1rem;
+    color: #2e1c16;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.left img{
+    width: 120px;
+}
+.left {
+    margin-right: 15px;
+}
+
+.right .cancel{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.right{
+    width: 33%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.button{
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #2e1c16;
+    width: 230px;
+    padding: 0.7rem 2rem;
+    border-radius: 20px;
+}
+
+.button span{
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 1100px) {
+    .right{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .flex{
+        padding: 0.8rem;
+    }
+    .left img{
+        width: 100px
+    }
+    .left{
+        margin-right: 8px;
+    }
+    .center p{
+        font-size: 10px;
+    }
+    .center h3{
+        font-size: 13px;
+    }
+    
+    .button{
+        padding: 0.5rem 0.7rem;
+        font-size: 5px;
+        width: 130px;
+    }
+    .button span{
+        margin-left: 5px;
+    }
+    .right h3{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .flex{
+        padding: 0.5rem;
+    }
+    .left img{
+        width: 80px
+    }
+    .left{
+        margin-right: 8px;
+    }
+    .center p{
+        font-size: 9px;
+    }
+    .center h3{
+        font-size: 12px;
+    }
+    .right{
+        margin-left: 8px;
+    }
+    .button{
+        padding: 0.4rem 0.7rem;
+        font-size: 5px;
+        width: 120px;
+    }
+    .button span{
+        margin-left: 2px;
+    }
+    .right h3{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .flex{
+        padding: 0.5rem;
+    }
+    .left img{
+        width: 80px
+    }
+    .left{
+        margin-right: 8px;
+    }
+    .center p{
+        font-size: 7px;
+    }
+    .center h3{
+        font-size: 10px;
+    }
+    .right{
+       margin: 8px;
+    }
+    .button{
+        padding: 0.4rem 0.7rem;
+        font-size: 5px;
+        width: 100px;
+    }
+    .button span{
+        margin-left: 2px;
+    }
+    .right h3{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .flex{
+        padding: 0.3rem;
+    }
+    .left img{
+        width: 50px
+    }
+    .left{
+        margin-right: 5px;
+    }
+    .center p{
+        font-size: 7px;
+    }
+    .center h3{
+        font-size: 9px;
+    }
+    .right{
+       margin-left: 5px;
+    }
+    .button{
+        padding: 0.2rem 0.5rem;
+        font-size: 5px;
+        width: 80px;
+    }
+    .button span{
+        margin-left: 2px;
+    }
+    .right h3{
+        font-size: 10px;
+    }
+    .cancel{
+        font-size: 5px;
+    }
+}

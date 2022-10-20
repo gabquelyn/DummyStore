@@ -1,0 +1,40 @@
+.icon{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    color: #2e1c16;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.highlight{
+    position: relative;
+}
+
+.icon:hover, .icon.active{
+    background-color: #EDE7DC;
+}
+#dark.icon:hover, #dark.icon.active{
+    background-color: #aaa097;
+}
+.highlight::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: -2px;
+    background-color: red;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 4px red, 0px -1px 4px red ;
+}
+
+@media screen and (max-width: 700px) {
+    .icon{
+        font-size: 20px;
+        padding: 10px;
+    }
+}

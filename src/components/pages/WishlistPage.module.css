@@ -1,0 +1,24 @@
+.page{
+    width: 98%;
+    margin: 10px auto;
+    padding: 2px;
+}
+.page .head{
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    color: #2e1c16;
+    padding: 5px;
+    margin: 0px 0px 2px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page .head{
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 500px){
+    .page{
+        font-size: 10px;
+    }
+}

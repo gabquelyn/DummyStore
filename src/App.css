@@ -1,0 +1,24 @@
+body{
+    overflow: hidden;
+}
+
+
+.App{
+    background-color: #EDE7DC;
+    display: grid;
+    grid-template-columns:15% auto;
+}
+
+
+.main-page{
+    background-color: #EDE7DC;
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    position: relative;
+    transition: background-color 0.4s ease;
+}
+
+#dark.main-page{
+    background-color: #2E1C16;
+}
