@@ -12,7 +12,7 @@ const InformationPage = () => {
                     <p>This is just a <b>dummyStore</b>, I used the word "dummy" beacause it pulls data directly from a realtime database (Firebase). It's
                     only meant for a test, it was made with <b>React</b> and <b>Reduxjs</b>.
                     The branding is also an idea that you might want to consider purchasing (winks) :). This was made
-                    <b> only for display and practice only.</b><br/></p>
+                    <b> for display and practice only.</b><br/></p>
                     <p className={classes.love}>Made with <FontAwesomeIcon icon = {faHeart} /> LoneDev.</p>
                 </section>
                 <div className = {classes.connect}>
