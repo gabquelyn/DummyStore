@@ -7,7 +7,9 @@
     align-items: center;
     margin-bottom: 5px;
 }
-
+#dark.flex{
+    background-color: #ede7dc;
+}
 .left img{
     width: 120px;
 }

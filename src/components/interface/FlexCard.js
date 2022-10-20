@@ -4,8 +4,10 @@ import { faXmark, faShoppingCart} from '@fortawesome/free-solid-svg-icons';
 import { cartSliceActions } from '../../store/cart-slice';
 import { wishlistActions } from '../../store/wishlist-slice';
 import { useDispatch } from 'react-redux';
+import useId from '../hooks/useId';
 const FlexCard = (props) => {
     const dispatch = useDispatch();
+    const {darkMode} = useId();
     const addToCartHandler = () => {
         dispatch(cartSliceActions.addItemToCart(
             {
@@ -21,7 +23,7 @@ const FlexCard = (props) => {
         dispatch(wishlistActions.removefromWishList(props.id))
     }
     return(
-        <div className = {classes.flex}>
+        <div className = {classes.flex} id = {`${darkMode && classes.dark}`}>
             <div className={classes.left}>
                 <img src = {props.image} alt = {props.name}/>
             </div>

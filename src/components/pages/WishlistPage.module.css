@@ -13,6 +13,10 @@
     justify-content: space-between;
 }
 
+#dark.head{
+    background-color: #ede7dc;
+    box-shadow: 0 2px 4px rgba(225,225,225, 0.3);
+}
 .page .head{
     font-weight: bolder;
 }

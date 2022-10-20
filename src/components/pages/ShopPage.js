@@ -55,10 +55,10 @@ const ShopPage = () =>{
         </div> 
     }
     return(
-        <>
+        <div className={classes.page}>
         {main}
         { visible && <Modal/>}
-        </>
+        </div>
     )
 }
 
