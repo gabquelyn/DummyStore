@@ -21,6 +21,9 @@
     justify-content: space-between;
     align-items: center;
 }
+#dark.head{
+    background-color: #ede7dc;
+}
 .head h2{
     margin: 0
 }

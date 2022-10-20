@@ -32,6 +32,9 @@
 #dark.modal{
     background-color: #ede7dc;
 }
+#dark.modal button.cartbutton{
+    color: #ede7dc;
+}
 .price{
     text-align: right;
 }
