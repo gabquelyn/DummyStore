@@ -25,9 +25,16 @@
     background-color:#EDE7DC;
 }
 
+.last {
+    margin-bottom: 10px;
+}
+
 
 @media screen and (max-width: 800px) {
     .nav p{
         font-size: 9px;
+    }
+    .last{
+        margin-bottom: 50px;
     }
 }

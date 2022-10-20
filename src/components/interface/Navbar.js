@@ -23,7 +23,7 @@ const Navbar = () =>{
                 <p>Activities</p>
                 <ActivitiesIcon/>
             </div>
-            <div>
+            <div className={classes.last}>
                 <p>About us</p>
                 <AboutUsIcon/>
             </div>
