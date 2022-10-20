@@ -38,7 +38,7 @@ const Modal = () => {
                     <h3 className={classes.price}>{`$${item.price}`}</h3>
                     <div className={classes.actions}>
                         {!existingInWishList && <button onClick ={wishlistHandler}>Add to wishlist</button>}
-                        {!existsInCart && <button className={classes.cartbutton}><FontAwesomeIcon className={classes.icon} icon ={faShoppingCart} onClick = {addToCartHandler}/>Add to cart</button>}
+                        {!existsInCart && <button onClick = {addToCartHandler} className={classes.cartbutton}><FontAwesomeIcon className={classes.icon} icon ={faShoppingCart}/>Add to cart</button>}
                     </div>
                 </div>
             </div>
