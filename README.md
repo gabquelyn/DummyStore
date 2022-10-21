@@ -20,3 +20,4 @@ Please make sure to update tests as appropriate.
 
 ## Project Status
 The project is still undergoing a better upgrade :).
+[view](https://neutrewears.netlify.app/)
